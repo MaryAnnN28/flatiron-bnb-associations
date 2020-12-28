@@ -47,3 +47,24 @@ has_many :listings, :foreign_key => 'host_id'
 ## Resources
 
 [Foreign key and Class Name AR class methods](http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html)
+
+
+Models
+- User: 
+      - Guest
+         - has many reservations 
+         - has many reviews 
+      - Host 
+         - has many listings 
+- Listing 
+      - belongs to Host 
+- City 
+
+- Neighborhood 
+
+- Reservation
+      - belongs to Guest 
+- Review 
+      - belongs to Guest 
+
+
